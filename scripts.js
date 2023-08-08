@@ -2,11 +2,11 @@
 // Describe the following code:
 "answer: this is breaking down the  selling price of a product to a customer, the cost of buying the product as a business, the number of that specific product(not sure if it means sold or in stock) and then breaks down the profit by breaking down the sales total first: the cost of selling it to a customer multiplied by the number of products (possibly sold or in inventory). That sales total is them subtracted by the multiplication of the cost to buy the product as a business times the number of that product."
 
-const wholesalePrice = 5.45;
-const retailPrice = 9.99;
-const quantity = 47;
-const salesTotal = retailPrice * quantity;
-const profit = salesTotal - (wholesalePrice * quantity);
+let wholesalePrice = 5.45;
+let retailPrice = 9.99;
+let quantity = 47;
+let salesTotal = retailPrice * quantity;
+let profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used?
 
@@ -75,7 +75,6 @@ if (step3 % 2 === 0) {
 // Calculate how many you would eat total for the next decade.
 // Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
 
-
 const age = 26;
 const maximum = 36;
 const meals = 2;
@@ -89,10 +88,12 @@ console.log(`You will need ${decade} meals to last until the age of ${age}!`);
 /********************** Exercise 4 - PEMDAS **********************/
 // You are working on an education app and you want to be able to provide the average scores for students.
 // Here are the stored variables for a student and their subjects.
-const mathScore = 90;
-const scienceScore = 85;
-const englishScore = 80;
-const historyScore = 95;
+
+let mathScore = 90;
+let scienceScore = 85;
+let englishScore = 80;
+let historyScore = 95;
+
 // How would you get the average of their scores using JavaScript?
 
 
@@ -109,6 +110,7 @@ const historyScore = 95;
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
 
+
 /********************** Exercise 6 - Assigning Values  **********************/
 
 // Prompt the user for two numbers.
@@ -121,7 +123,7 @@ const historyScore = 95;
 
 // Add 100 to the variable. Log the value.
 
-// Divide the value of the variable by 20. Log the value. 
+// Divide the value of the variable by 20. Log the value.
 
 
 
@@ -129,7 +131,7 @@ const historyScore = 95;
 
 
 /********************** Exercise 7 - Math Object  **********************/
-const decimalNumber = 7.8;
+let decimalNumber = 7.8;
 // Given the above variable, how would you round the value to the nearest whole number (using the Math object)?
 
 // Console log the output to check your work.
@@ -142,6 +144,7 @@ const decimalNumber = 7.8;
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
 
+
 // Alert the user of the random number.
 
 
@@ -150,13 +153,20 @@ const decimalNumber = 7.8;
 
 
 /********************** Exercise 9 - NaN  **********************/
-const result1 = 0 / 0; 
-const result2 = "hello" * 5; 
-const result3 = parseInt("abc"); 
+let result1 = 0 / 0;
+let result2 = "hello" * 5;
+let result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
 
-// Run the following code. How would you edit the following code so that it runs properly, while keeping the second value a string?
-const value = 4 / 'four';
+// Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
+
+let numVersion = 4;
+let wordVersion = 'four';
+
+
+
+console.log("Four divided by four is: " + (numVersion / wordVersion))
+
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
