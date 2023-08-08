@@ -1,5 +1,6 @@
 /********************** Exercise 1  **********************/
 // Describe the following code:
+"answer: this is breaking down the  selling price of a product to a customer, the cost of buying the product as a business, the number of that specific product(not sure if it means sold or in stock) and then breaks down the profit by breaking down the sales total first: the cost of selling it to a customer multiplied by the number of products (possibly sold or in inventory). That sales total is them subtracted by the multiplication of the cost to buy the product as a business times the number of that product."
 
 const wholesalePrice = 5.45;
 const retailPrice = 9.99;
@@ -9,28 +10,62 @@ const profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used?
 
+"answer: I could see this being used with some sort of financial tracking sheet to estimate profit of items in stock. Maybe an inventory app or quickbooks type set up."
 
 // Run this code and log the profit variable in the console. What answer do you get?
 
+"answer: 213.38"
 
 // How would you change this code to make the value of the quanitity variable dynamic?
 
+"answer: an array/eval - you could attach the quantity value to an inventory tracker of sorts that gets updated seperately and then have the value of quantity in this code by the value of the other adjustable variable"
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
 
+let x = 5;
+let y = 6;
+
+let step1 = (x + y);
+
+console.log(step1); // 11
+
 
 // Step 2: Calculate the difference between two numbers and print the result.
+
+let x = 5;
+let y = 6;
+
+let step2 = (x / y);
+
+console.log(step2); // 0.8333
 
 
 // Step 3: Calculate the product of two numbers and print the result.
 
+let x = 5;
+let y = 6;
+
+let step3 = (x * y);
+
+console.log(step3); // 30
+
+
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
 
+let x = 5;
+let y = 6;
+let step4 = (x / y);
+console.log(step4);
 
 // Step 5: Check if a given number is even and print the result.
 
+if (step3 % 2 === 0) {
+    console.log("It's even!")}
+    else {
+        console.log("It's odd!")
+    }
 
 
 /********************** Exercise 3 - Decades Calculator **********************/
@@ -41,7 +76,13 @@ const profit = salesTotal - (wholesalePrice * quantity);
 // Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
 
 
+const age = 26;
+const maximum = 36;
+const meals = 2;
 
+let decade = (age * 10);
+
+console.log(`You will need ${decade} meals to last until the age of ${age}!`);
 
 
 
@@ -62,13 +103,10 @@ const historyScore = 95;
 /********************** Exercise 5 - Weather Converter **********************/
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
 
-
 // Prompt the user for the value of the temperature in celcius. 
 
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
-
-
 
 
 /********************** Exercise 6 - Assigning Values  **********************/
