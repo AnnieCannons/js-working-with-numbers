@@ -53,7 +53,7 @@ head {
 
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap") repeat scroll 0 0 rgba(0, 0, 0, 0);
 
-.top-wrapper, #intro-heading, #intro, #final-results {
+.top-wrapper, #intro-heading, #intro, #final-results  {
     animation: scroll 100s linear infinite;
     background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
         #111111;
@@ -102,7 +102,7 @@ head {
         text-align: left;
         font-size: 3vh;
         font-family:'Courier New', Courier, monospace;
-        background-color: rgba(255, 255, 255, 0.187);
+        background-color: rgba(0, 0, 0, 0.948);
         border-radius:  50px;
         margin-top: 10px;
         height: auto;
@@ -112,10 +112,20 @@ head {
 #code {
 color: limegreen;    
 background-color: black;
-display: flex;
-flex-wrap: wrap;
-width:fit-content;
-padding: 10px;
+display:flex;
+text-align: left;
+line-height: 2.5rem; 
+justify-content: center;
+font-family:'Courier New', Courier, monospace;
+border-radius:  10px;
+        margin-top: 10px;
+        height: auto;
+        min-width: 360px;
+        perspective-origin: 50% 50%;
+        perspective: 1000px;
+        max-width: fit-content;
+        font-size: 2.5vh;
+
 }
 
 #links {
@@ -124,7 +134,12 @@ padding: 10px;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
-    width:fit-content;
+    height: auto;
+    max-width: fit-content;
     padding: 10px;
     margin-top: 0;
+    min-width: 360px;
+    perspective-origin: 50% 50%;
+    perspective: 1000px;
+    font-size: 2.5vh;
     }
