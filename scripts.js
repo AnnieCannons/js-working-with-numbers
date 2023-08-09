@@ -75,7 +75,7 @@ let historyScore = 95;
 
 // Prompt the user for two numbers.
 
-// Make sure that the values of the variables (the strings) are converted to numbers. 
+// Make sure that the values of the variables are converted to numbers—any time a value comes to you from a user, it will be a string.
 
 // Create a new variable, add the numbers, and log the value.
 
