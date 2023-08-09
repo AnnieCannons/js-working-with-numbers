@@ -50,20 +50,33 @@ const result = num7 / num8
 
 console.log('The result of ' + num7 + ' and ' + num8 + ' is: ' + result)
 // Step 5: Check if a given number is even and print the result.
+let number = 36;
 
 if(number % 2 == 0){
     console.log('The number is even.')
 }
-
+else {
+    console.log('The number is odd')
+}
 /********************** Exercise 3 - Decades Calculator **********************/
 // Store your current age into a variable.
+let myAge = 38;
+
 // Store a maximum age into a variable (10 years older than you are now).
+let olderAge = 48;
+
 // Store an estimated number of meals you should eat per day (as a number).
+let mealsPerDay = 3;
+
 // Calculate how many you would eat total for the next decade.
+let mealsPerYear = 3 * 365;
+console.log(mealsPerYear)
+
+let mealsPerDecade = mealsPerYear * 10;
+console.log(mealsPerDecade)
+
 // Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
-
-
-
+console.log('You will need ' + mealsPerDecade + ' meals to last you until the age of ' + olderAge)
 
 
 /********************** Exercise 4 - PEMDAS **********************/
@@ -77,8 +90,8 @@ let historyScore = 95;
 
 // How would you get the average of their scores using JavaScript?
 
-
-
+let averageScores = ((mathScore + scienceScore + englishScore + historyScore)/4)
+console.log(averageScores)
 
 
 
