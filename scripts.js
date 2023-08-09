@@ -8,13 +8,14 @@ let salesTotal = retailPrice * quantity;
 let profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used?
-
+"a store"
 
 // Run this code and log the profit variable in the console. What answer do you get?
+console.log(profit)
+"213.38"
 
-
-// How would you change this code to make the value of the quanitity variable dynamic?
-
+// How would you change this code to make the value of the quantity variable dynamic?
+"A dynamic value is a string that defines how the final value should be compiled."
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
