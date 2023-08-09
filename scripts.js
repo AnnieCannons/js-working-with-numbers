@@ -14,7 +14,7 @@ let profit = salesTotal - (wholesalePrice * quantity);
 
 // Run this code and log the profit variable in the console. What answer do you get?
 
-"answer: 213.38"
+console.log(profit); // 213.38
 
 // How would you change this code to make the value of the quanitity variable dynamic?
 
@@ -23,30 +23,30 @@ let profit = salesTotal - (wholesalePrice * quantity);
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
 
-let x = 5;
-let y = 6;
+let x1 = 5;
+let y1 = 6;
 
-let step1 = (x + y);
+let step1 = (x1 + y1);
 
 console.log(step1); // 11
 
 
 // Step 2: Calculate the difference between two numbers and print the result.
 
-let x = 5;
-let y = 6;
+let x2 = 5;
+let y2 = 6;
 
-let step2 = (x / y);
+let step2 = (x2 - y2);
 
-console.log(step2); // 0.8333
+console.log(step2); // -1
 
 
 // Step 3: Calculate the product of two numbers and print the result.
 
-let x = 5;
-let y = 6;
+let x3 = 5;
+let y3 = 6;
 
-let step3 = (x * y);
+let step3 = (x3 * y3);
 
 console.log(step3); // 30
 
@@ -54,18 +54,19 @@ console.log(step3); // 30
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
 
-let x = 5;
-let y = 6;
-let step4 = (x / y);
-console.log(step4);
+let x4 = 5;
+let y4 = 6;
+let step4 = (x4 / y4);
+console.log(step4); // 0.83333
 
 // Step 5: Check if a given number is even and print the result.
 
-if (step3 % 2 === 0) {
-    console.log("It's even!")}
-    else {
-        console.log("It's odd!")
-    }
+if (step4 % 2 === 0) {
+    console.log("It's even!")
+}
+else {
+    console.log("It's odd!")
+} // its odd!
 
 
 /********************** Exercise 3 - Decades Calculator **********************/
@@ -79,9 +80,9 @@ const age = 26;
 const maximum = 36;
 const meals = 2;
 
-let decade = (age * 10);
+let total = ((maximum - age) * 365) * meals;
 
-console.log(`You will need ${decade} meals to last until the age of ${age}!`);
+console.log(`You will need ${total} meals to last until the age of ${maximum}!`); // You will need 7300 meals to last until the age of 36!
 
 
 
@@ -97,18 +98,71 @@ let historyScore = 95;
 // How would you get the average of their scores using JavaScript?
 
 
+const tests = [mathScore, scienceScore, englishScore, historyScore];
+const score = average(tests);
 
+function average(tests) {
+    let sum = tests.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    }, 0);
+
+    let avg = sum / tests.length;
+
+    return avg;
+}
+
+console.log(`The overall average is, ${score}!`); // The overall average is, 87.5!
 
 
 
 /********************** Exercise 5 - Weather Converter **********************/
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
 
-// Prompt the user for the value of the temperature in celcius. 
+ // Prompt the user for the value of the temperature in celcius. 
+
+// Run the code so that the following is exercise6 to the console: 25°C is equal to 77°F
+
+"answer(s)"
+
+//  OPTION ONE:
+
+function toCelsius (pValue) { 
+   return ((Number(pValue) * (9/5)) + 32);
+}
+
+let pValue = prompt("Please log the temperature in celcius here! (note the value should be less than 57.6)");
+
+let fahrenheit = toCelsius(Number(pValue)); 
+
+if (Number(pValue) < 57.6) {
+    console.log(`${Number(pValue)}°C is equal to ${fahrenheit}°F`); } // 25 °C is equal to 77 °F
 
 
-// Run the code so that the following is logged to the console: 25°C is equal to 77°F
+// OPTION TWO
 
+function toCelsius (pValue) { 
+    return ((pValue * (9/5)) + 32);
+}
+
+let pValue = prompt("Please log the temperature in celcius here! (note the value should be less than 57.6)");
+
+let fahrenheit = toCelsius(pValue)
+
+if (pValue < 57.6) {
+    console.log(`${pValue}°C is equal to ${fahrenheit}°F`); } // 25 °C is equal to 77 °F
+
+// OPTION THREE 
+
+function toCelsius (pValue) { 
+    return ((pValue * (9/5)) + 32);
+}
+
+let pValue = parseInt(prompt("Please log the temperature in celcius here! (note the value should be less than 57.6)"));
+
+let fahrenheit = toCelsius(pValue)
+
+if (pValue < 57.6) {
+    console.log(`${pValue}°C is equal to ${fahrenheit}°F`); } // 25 °C is equal to 77 °F
 
 
 /********************** Exercise 6 - Assigning Values  **********************/
@@ -125,9 +179,126 @@ let historyScore = 95;
 
 // Divide the value of the variable by 20. Log the value.
 
+"answer"
 
 
+// This took more brain power than I'm ok with but success  {0.0}
 
+/* Some resources I frequented in one form or another on the site: 
+
+https://www.w3schools.com/js/default.asp
+
+https://zzzcode.ai/code-explain 
+
+https://discuss.codecademy.com/t/
+what-is-the-difference-between-printing-3-4-and-3-4/489337 */
+
+
+function toAdd1(numbers) {
+    let add =  (xp + yp);
+    return add;
+}
+
+function toSub1(numbers) {
+    let sub =  (xp - yp);
+    return sub;
+}
+
+function toHundred1(numbers) {
+    let hundred = ((xp - yp) + 100);
+    return hundred;
+}
+
+function toDivide1(numbers) {
+    let divide =  (((xp - yp) + 100) / 2);
+    return divide;
+}
+
+// I didn't get much chance to use array methods here but this worked. I would be interested in using array methods in order to cut down on some typing / make things more direct and consistely formated for when I get my big-person job one day soon! 
+
+// (future growth and forward  thinking shout out to the Growth Mindset Udemy Course!  Link: https://anniecannons.udemy.com/course/growth-mindset-the-key-to-greater-confidence-and-impact/learn/lecture/17869850?learning_path_id=5560730#content 
+
+//Using methods / "shortcuts" helps make a consistent template to follow. Makes for less thinking and more inserting variables into "relatively" pre-assigned locations
+
+let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
+
+// output is an array with seperated variables to call on individually in the next few commands 
+
+let exercise6 = numbers.map(Number);
+
+// CRUCIAL: this converts the input from the prompt into numeric values so we can do the mathmatical equations seen in the above functions - I got none of the commands to work seen above and below until I did this 
+
+let xp = exercise6[0];
+let yp = exercise6[1];
+
+// this specifically assigns the two seperate variables to a smaller variable to make typing the functions seen above shorter / quicker
+
+console.log(`The values added together equal ${toAdd1(numbers)} and subtracted apart equals ${toSub1(numbers)}. Adding 100 to the subtracted values equals ${toHundred1(numbers)} and then further dividing that subtracted number by 2 equals ${toDivide1(numbers)}.`); // I choose the input values (8 6) to get: The values added together equal 14 and subtracted apart equals 2. Adding 100 to the subtracted values equals 102 and then further dividing that subtracted number by 2 equals 51.
+
+// this log makes a summary sentence that answers all the specific prompts given for exercise 6 - a nice lil wrap up 
+
+"The journey in expercise 6" 
+
+/* THIS IS ALL THE CRAP I PLAYED AROUND WITH TO FIGURE OUT WHAT DID WHAT AND WHAT RUINED EVERYTHING SUDDENLY (RIP MY WORKING COMMANDS SOMETIMES) 
+
+// add 1
+function toAdd1(exercise6) {
+    let add = (numbers[0] + numbers[1]);
+    return add;
+}
+// sub 1
+function toSub1(exercise6) {
+    let sub = (numbers[0] - numbers[1]);
+    return sub;
+}
+
+// add 2
+
+function toAdd2(exercise6) {
+    let add = numbers.join("+");
+}
+
+// sub 2
+function toSub2(exercise6) {
+    return numbers[0] -= numbers[1];
+}
+
+// sub 3
+
+function toSub3(exercise6) {
+    add = numbers.sort(function (a, b) { return b - a }).join("-");
+}
+
+
+// 100 1
+function toHundred1(exercise6) {
+    return subtracted += 100;
+}
+
+// 100 2
+function toHundred2(exercise6) {
+    let hundred = numbers.push("100").join("+");
+}
+
+// divide 1
+
+function toDivide1(exercise6) {
+    return (hundred / 20);
+}
+
+// divide 2
+function toDivide2(exercise6) {
+    return hundred /= 2;
+}
+
+let exercise6 = prompt("Please submit two numbers (example: 31 15)");
+let numbers = exercise6.split(" ");
+console.log(numbers);
+
+console.log(`The values (${numbers[0]}, ${numbers[1]}) added equal ${toAdd1(exercise6)} and subtracted equal ${toSub1(exercise6)}. Adding 100 to the subtracted values equals ${toHundred1(exercise6)} and then further divided by 2 equals ${toDivide1(exercise6)}.`);
+*/ 
+
+"there were a lot more that i deleted but in the future i wont _ just so we can journey the real journey it takes to get something wrong to get it right"
 
 
 /********************** Exercise 7 - Math Object  **********************/
@@ -159,7 +330,7 @@ let result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
 
-// Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
+// Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is exercise6 to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
 let numVersion = 4;
 let wordVersion = 'four';
