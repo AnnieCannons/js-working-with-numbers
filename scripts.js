@@ -100,11 +100,16 @@ console.log(averageScores)
 
 
 // Prompt the user for the value of the temperature in celcius. 
+userValueCelcius = prompt ('Please enter a celcius temperature')
 
+userValueCelcius = parseFloat (userValueCelcius)
+
+farenheit = ((userValueCelcius * 9/5) + 32);
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
 
+console.log(userValueCelcius + '\u00B0 C is equal to ' + farenheit + '\u00B0 F')
 
 /********************** Exercise 6 - Assigning Values  **********************/
 
