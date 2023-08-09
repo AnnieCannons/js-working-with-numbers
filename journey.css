@@ -1,16 +1,15 @@
 html {
     margin: 0;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
 }
 
 body {
-    margin: 0;
     font-family: "Montserrat", sans-serif;
     color: darkslategray;
 }
 
 head {
-    margin: 0;
+    margin: 0%;
 }
 
 /*This is all the css code for the header - though sometimes I zone out looking into the gravel void so I might need to change that */
@@ -31,6 +30,7 @@ head {
     font-weight: 500;
     text-transform: uppercase;
     color: var(--text-color);
+    letter-spacing: 10px;
 }
 
 .top-wrapper> div {
@@ -53,16 +53,16 @@ head {
 
 @import url("https://fonts.googleapis.com/css?family=Lobster&display=swap") repeat scroll 0 0 rgba(0, 0, 0, 0);
 
-.top-wrapper {
+.top-wrapper, #intro-heading, #intro, #final-results {
     animation: scroll 100s linear infinite;
     background: url("https://images.unsplash.com/photo-1465146633011-14f8e0781093?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3450&q=80"),
         #111111;
     color: #eee;
-    height: 15vh;
+    height: auto;
     min-width: 360px;
-    width: 100%;
+    margin: 10px 17%;
+    border-radius: 10px;;
     display: flex;
-    justify-content: center;
     align-items: center;
     perspective: 1000px;
     perspective-origin: 50% 50%;
@@ -75,4 +75,56 @@ head {
     }
 }
 
-#top-
+#intro-heading {
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.225);
+
+}
+
+#heading-text {
+    display:flex;
+    flex-wrap:wrap;
+    padding: 0px 3rem;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 2.5vh;
+    letter-spacing: 2px;
+}
+
+
+.content-text {
+        display:flex;
+        flex-wrap:wrap;
+        padding: 0px 2rem;
+        text-align: left;
+        font-size: 3vh;
+        font-family:'Courier New', Courier, monospace;
+        background-color: rgba(255, 255, 255, 0.187);
+        border-radius:  50px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+}
+
+#code {
+color: limegreen;    
+background-color: black;
+display: flex;
+flex-wrap: wrap;
+width:fit-content;
+padding: 10px;
+}
+
+#links {
+    color: red;
+    line-height: 2.5rem;    
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    width:fit-content;
+    padding: 10px;
+    margin-top: 0;
+    }

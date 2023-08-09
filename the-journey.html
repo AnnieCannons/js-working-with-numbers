@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Journey</title>
-    <script src="" scripts.js" defer></script>
+    <script src="" journey.js" defer></script>
     <link rel="stylesheet" href="./journey.css" />
 
     <section id="head-box">
@@ -16,150 +16,270 @@
                 <div class="bottom" aria-hidden="true">The Journey</div>
             </h1>
 
-</head>
 
 <body>
 
-</body>
+<div id="intro-heading" class="heading-text">
+    <h1>
+        <p id="heading-text">
+            This brain child of documenting what the heck I'm doing for my own sake happened at exercise 6...so here
+            I am and here I go!
+        </p>
+    </h1>
+</div>
 
+<main id="main">
+
+<section id="exercises" class="content-box">
+
+<div class="content-text" id="intro" >
+
+    <p>(This took more brain power than I'm ok with but success  {0.0}
+  <br/>
+  <br/>
+Some resources I frequented in one form or another on the site:
+</p>
+<p id="links">
+https://www.w3schools.com/js/default.asp
+        <br/>
+https://zzzcode.ai/code-explain
+        <br/>
+https://discuss.codecademy.com/t/
+        <br/>
+what-is-the-difference-between-printing-3-4-and-3-4/489337 )
+        <br/>
+</p>
+</div>
+</section>
+
+<section id="exercises" class="content-box">
+<div class="content-text" id="final-results" >
+    <div>
+<p>
+        <br/>
+THIS IS THE FINAL RESULT:  
+        <br/>
+</p>
+</div>
+
+<div>
+<p id="code">
+function toAdd1(numbers) {
+        <br/>
+let add =  (xp + yp);
+        <br/>
+return add;
+        <br/>
+}
+        <br/>
+        <br/>
+function toSub1(numbers) {
+        <br/>
+let sub =  (xp - yp);
+        <br/>
+return sub;
+        <br/>
+}
+        <br/>
+        <br/>
+function toHundred1(numbers) {
+        <br/>
+let hundred = ((xp - yp) + 100);
+        <br/>
+return hundred;
+        <br/>
+}
+        <br/>
+        <br/>
+function toDivide1(numbers) {
+        <br/>
+let divide =  (((xp - yp) + 100) / 2);
+        <br/>
+return divide;
+        <br/>
+}
+        <br/>
+        <br/>
+        </p>
+       
+        <p>
+( I didn't get much chance to use array methods here but this worked. I would be interested in using array methods in order to cut down on some typing / make things more direct and consistely formated for when I get my big-person job one day soon!
+        <br/>
+        <br/>
+Future growth and forward  thinking shout out to the Growth Mindset Udemy Course!
+        <br/>
+        <br/>
+Link: https://anniecannons.udemy.com/course/growth-mindset-the-key-to-greater-confidence-and-impact/learn/lecture/17869850?learning_path_id=5560730#content
+        <br/>
+        <br/>
+- Using methods / "shortcuts" helps make a consistent template to follow. Makes for less thinking and more inserting variables into "relatively" pre-assigned locations)
+        <br/>
+        <br/>
+        </p>
+        <p id="code">
+let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
+        <br/>
+        <br/>
+// output is an array with seperated variables to call on individually in the next few commands
+        <br/>
+        <br/>
+let exercise6 = numbers.map(Number);
+        <br/>
+        <br/>
+        </p>
+// CRUCIAL: this converts the input from the prompt into numeric values so we can do the mathmatical equations seen in the above functions - I got none of the commands to work seen above and below until I did this
+        <br/>
+        <br/>
+    </p>
+    <p id="code">
+let xp = exercise6[0];
+        <br/>
+let yp = exercise6[1];
+        <br/>
+        <br/>
+        </p>
+// this specifically assigns the two seperate variables to a smaller variable to make typing the functions seen above shorter / quicker
+        <br/>
+        <br/>
+    </p>
+    <p id="code">
+console.log(`The values added together equal ${toAdd1(numbers)} and subtracted apart equals ${toSub1(numbers)}. Adding 100 to the subtracted values equals ${toHundred1(numbers)} and then further dividing that subtracted number by 2 equals ${toDivide1(numbers)}.`); // I choose the input values (8 6) to get: The values added together equal 14 and subtracted apart equals 2. Adding 100 to the subtracted values equals 102 and then further dividing that subtracted number by 2 equals 51.
+        <br/>
+        <br/>
+// this log makes a summary sentence that answers all the specific prompts given for exercise 6 - a nice lil wrap up
+</p>
+</div>
+</section>
+        <br/>
+        <br/>
+        <br/>
+
+        <section id="exercises" class="content-box">
+            <div class="content-text" id="final-results" >
+            <p>
+"The journey in expercise 6"
+        <br/>
+        <br/>
+(THIS IS ALL THE CRAP I PLAYED AROUND WITH TO FIGURE OUT WHAT DID WHAT AND WHAT RUINED EVERYTHING SUDDENLY (RIP MY WORKING COMMANDS SOMETIMES)
+        <br/>
+        <br/>
+add 1
+        <br/>
+function toAdd1(exercise6) {
+        <br/>
+let add = (numbers[0] + numbers[1]);
+        <br/>
+return add;
+        <br/>
+}
+        <br/>
+        <br/>
+// sub 1
+        <br/>
+function toSub1(exercise6) {
+        <br/>
+let sub = (numbers[0] - numbers[1]);
+        <br/>
+return sub;
+        <br/>
+}
+        <br/>
+        <br/>
+// add 2
+        <br/>
+function toAdd2(exercise6) {
+        <br/>
+let add = numbers.join("+");
+        <br/>
+}
+        <br/>
+        <br/>
+// sub 2
+        <br/>
+function toSub2(exercise6) {
+        <br/>
+return numbers[0] -= numbers[1];
+        <br/>
+}
+        <br/>
+        <br/>
+// sub 3
+        <br/>
+function toSub3(exercise6) {
+        <br/>
+add = numbers.sort(function (a, b) { return b - a }).join("-");
+        <br/>
+}
+        <br/>
+// 100 1
+        <br/>
+function toHundred1(exercise6) {
+        <br/>
+return subtracted += 100;
+        <br/>
+}
+        <br/>
+        <br/>
+// 100 2
+        <br/>
+function toHundred2(exercise6) {
+        <br/>
+let hundred = numbers.push("100").join("+");
+        <br/>
+}
+        <br/>
+        <br/>
+divide 1
+        <br/>
+function toDivide1(exercise6) {
+        <br/>
+return (hundred / 20);
+        <br/>
+}
+        <br/>
+        <br/>
+divide 2
+        <br/>
+function toDivide2(exercise6) {
+        <br/>
+return hundred /= 2;
+        <br/>
+}
+        <br/>
+        <br/>
+let exercise6 = prompt("Please submit two numbers (example: 31 15)");
+        <br/>
+let numbers = exercise6.split(" ");
+        <br/>
+console.log(numbers);
+        <br/>
+console.log(`The values (${numbers[0]}, ${numbers[1]}) added equal ${toAdd1(exercise6)} and subtracted equal ${toSub1(exercise6)}. Adding 100 to the subtracted values equals ${toHundred1(exercise6)} and then further divided by 2 equals ${toDivide1(exercise6)}.`);
+        <br/>
+        <br/>
+*/
+        <br/>
+(there were a lot more that i deleted but in the future i wont _ just so we can journey the real journey it takes to get something wrong to get it right)
+        <br/>
+        <br/>
+    </p>
+    </div>
+    </section>
+</body>
 </html>
 
-<section id="content" class="text">
 
-    <div id="top-heading" class="heading-text">
-        <h1>
-            <p>
-                This brain child of documenting what the heck I'm doing for my own sake happened at exercise 6...so here
-                I am and here I go!
-            </p>
-        </h1>
-    </div>
+</div>
 
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 
-<p>
-
-
-
-// This took more brain power than I'm ok with but success  {0.0}
-
-/* Some resources I frequented in one form or another on the site: 
-
-https://www.w3schools.com/js/default.asp
-
-https://zzzcode.ai/code-explain 
-
-https://discuss.codecademy.com/t/
-what-is-the-difference-between-printing-3-4-and-3-4/489337 */
-
-
-function toAdd1(numbers) {
-    let add =  (xp + yp);
-    return add;
-}
-
-function toSub1(numbers) {
-    let sub =  (xp - yp);
-    return sub;
-}
-
-function toHundred1(numbers) {
-    let hundred = ((xp - yp) + 100);
-    return hundred;
-}
-
-function toDivide1(numbers) {
-    let divide =  (((xp - yp) + 100) / 2);
-    return divide;
-}
-
-// I didn't get much chance to use array methods here but this worked. I would be interested in using array methods in order to cut down on some typing / make things more direct and consistely formated for when I get my big-person job one day soon! 
-
-// (future growth and forward  thinking shout out to the Growth Mindset Udemy Course!  Link: https://anniecannons.udemy.com/course/growth-mindset-the-key-to-greater-confidence-and-impact/learn/lecture/17869850?learning_path_id=5560730#content 
-
-//Using methods / "shortcuts" helps make a consistent template to follow. Makes for less thinking and more inserting variables into "relatively" pre-assigned locations
-
-let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
-
-// output is an array with seperated variables to call on individually in the next few commands 
-
-let exercise6 = numbers.map(Number);
-
-// CRUCIAL: this converts the input from the prompt into numeric values so we can do the mathmatical equations seen in the above functions - I got none of the commands to work seen above and below until I did this 
-
-let xp = exercise6[0];
-let yp = exercise6[1];
-
-// this specifically assigns the two seperate variables to a smaller variable to make typing the functions seen above shorter / quicker
-
-console.log(`The values added together equal ${toAdd1(numbers)} and subtracted apart equals ${toSub1(numbers)}. Adding 100 to the subtracted values equals ${toHundred1(numbers)} and then further dividing that subtracted number by 2 equals ${toDivide1(numbers)}.`); // I choose the input values (8 6) to get: The values added together equal 14 and subtracted apart equals 2. Adding 100 to the subtracted values equals 102 and then further dividing that subtracted number by 2 equals 51.
-
-// this log makes a summary sentence that answers all the specific prompts given for exercise 6 - a nice lil wrap up 
-
-"The journey in expercise 6" 
-
-/* THIS IS ALL THE CRAP I PLAYED AROUND WITH TO FIGURE OUT WHAT DID WHAT AND WHAT RUINED EVERYTHING SUDDENLY (RIP MY WORKING COMMANDS SOMETIMES) 
-
-// add 1
-function toAdd1(exercise6) {
-    let add = (numbers[0] + numbers[1]);
-    return add;
-}
-// sub 1
-function toSub1(exercise6) {
-    let sub = (numbers[0] - numbers[1]);
-    return sub;
-}
-
-// add 2
-
-function toAdd2(exercise6) {
-    let add = numbers.join("+");
-}
-
-// sub 2
-function toSub2(exercise6) {
-    return numbers[0] -= numbers[1];
-}
-
-// sub 3
-
-function toSub3(exercise6) {
-    add = numbers.sort(function (a, b) { return b - a }).join("-");
-}
-
-
-// 100 1
-function toHundred1(exercise6) {
-    return subtracted += 100;
-}
-
-// 100 2
-function toHundred2(exercise6) {
-    let hundred = numbers.push("100").join("+");
-}
-
-// divide 1
-
-function toDivide1(exercise6) {
-    return (hundred / 20);
-}
-
-// divide 2
-function toDivide2(exercise6) {
-    return hundred /= 2;
-}
-
-let exercise6 = prompt("Please submit two numbers (example: 31 15)");
-let numbers = exercise6.split(" ");
-console.log(numbers);
-
-console.log(`The values (${numbers[0]}, ${numbers[1]}) added equal ${toAdd1(exercise6)} and subtracted equal ${toSub1(exercise6)}. Adding 100 to the subtracted values equals ${toHundred1(exercise6)} and then further divided by 2 equals ${toDivide1(exercise6)}.`);
-*/ 
-
-"there were a lot more that i deleted but in the future i wont _ just so we can journey the real journey it takes to get something wrong to get it right"
-
-</p>
-
-    
+</section>
+</main>
 </body>
 </html>
