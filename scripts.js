@@ -19,20 +19,41 @@ console.log(profit)
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
+let num1 = 17;
+let num2 = 23;
 
+const sum = num1 + num2;
+
+console.log('The sum of ' + num1 + ' and ' + num2 + ' is :' + sum)
 
 // Step 2: Calculate the difference between two numbers and print the result.
+let num3 = 10;
+let num4 = 6;
 
+const difference = num3 - num4
+
+console.log("The difference between " + num3 + ' and ' + num4 + ' is:' + difference)
 
 // Step 3: Calculate the product of two numbers and print the result.
+let num5 = 3;
+let num6 = 23;
 
+const product = num5 * num6
+
+console.log('The product of ' + num5 + ' and ' + num6 + ' is: ' + product)
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
+let num7 = 17;
+let num8 = 4;
 
+const result = num7 / num8
 
+console.log('The result of ' + num7 + ' and ' + num8 + ' is: ' + result)
 // Step 5: Check if a given number is even and print the result.
 
-
+if(number % 2 == 0){
+    console.log('The number is even.')
+}
 
 /********************** Exercise 3 - Decades Calculator **********************/
 // Store your current age into a variable.
