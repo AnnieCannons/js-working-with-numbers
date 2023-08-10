@@ -154,11 +154,16 @@ console.log(roundedValue);
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
 
+/*function getRandomNumber (min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor (Math.random () * (1 - 6) + 1);
+}*/
 
+let getRandomNumber = Math.floor (Math.random () * (1 - 6) + 1);
 // Alert the user of the random number.
-
-
-
+console.log(getRandomNumber);
+alert('The random number selected for you is: ' + getRandomNumber);
 
 
 
