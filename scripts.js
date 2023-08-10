@@ -100,6 +100,7 @@ console.log(averageScores)
 
 
 // Prompt the user for the value of the temperature in celcius. 
+
 userValueCelcius = prompt ('Please enter a celcius temperature')
 
 userValueCelcius = parseFloat (userValueCelcius)
@@ -109,25 +110,35 @@ farenheit = ((userValueCelcius * 9/5) + 32);
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
 
-console.log(userValueCelcius + '\u00B0 C is equal to ' + farenheit + '\u00B0 F')
+/*console.log(userValueCelcius + '\u00B0 C is equal to ' + farenheit + '\u00B0 F')*/
 
 /********************** Exercise 6 - Assigning Values  **********************/
 
 // Prompt the user for two numbers.
+userNumber1 = prompt (' Please pick a number');
+userNumber2 = prompt ('Please pick another number');
 
 // Make sure that the values of the variables (the strings) are converted to numbers. 
+userNumber1 = parseFloat (userNumber1)
+userNumber2 = parseFloat (userNumber2)
 
 // Create a new variable, add the numbers, and log the value.
+let userNumberSum = userNumber1 + userNumber2
+
+console.log('The sum of ' + userNumber1 + ' and ' + userNumber2 + ' is:' + userNumberSum)
 
 // Reassign the variable to store the values of the numbers being substracted. Log the value.
+userNumberSum = (userNumber1 - userNumber2)
+
+console.log('The difference between ' + userNumber1 + ' and ' + userNumber2 +' is: ' + userNumberSum)
 
 // Add 100 to the variable. Log the value.
+userNumberSum = (userNumber1 + userNumber2 + 100)
+console.log('The sum of ' + userNumber1 + ' and ' + userNumber2 + ' plus 100 is: ' + userNumberSum)
 
 // Divide the value of the variable by 20. Log the value.
-
-
-
-
+userNumberSum = (userNumber1 + userNumber2 / 20)
+console.log('The result of ' + userNumber1 + ' and ' + userNumber2 + ' divided by 20 is: ' + userNumberSum)
 
 
 /********************** Exercise 7 - Math Object  **********************/
