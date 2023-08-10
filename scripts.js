@@ -173,15 +173,21 @@ let result2 = "hello" * 5;
 let result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
+console.log(result1)
+console.log(result2)
+console.log(result3)
+"All return NAN"
+
 
 // Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
 let numVersion = 4;
 let wordVersion = 'four';
 
-
+wordVersion = wordVersion.length;
 
 console.log("Four divided by four is: " + (numVersion / wordVersion))
 
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
+"isNAN() determines if a value is NAN, converts the number if necessary"
