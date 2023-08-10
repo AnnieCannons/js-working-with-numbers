@@ -144,11 +144,10 @@ console.log('The result of ' + userNumber1 + ' and ' + userNumber2 + ' divided b
 /********************** Exercise 7 - Math Object  **********************/
 let decimalNumber = 7.8;
 // Given the above variable, how would you round the value to the nearest whole number (using the Math object)?
+let roundedValue = Math.round(decimalNumber);
 
 // Console log the output to check your work.
-
-
-
+console.log(roundedValue);
 
 
 /********************** Exercise 8 - Math Object  **********************/
