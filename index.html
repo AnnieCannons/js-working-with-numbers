@@ -6,10 +6,169 @@
     <title>Document</title>
     <script src=""scripts.js"></script>
 
-    <a id="the-journey" href="the-journey.html">the journey</a>
+    <a id="the-journey" href="the-journey.html">Random Side Project</a>
+    <br />
+    <br />
 
 </head>
 <body>
+
+<!-- template for each exercise -->
+
+<!-- exercise # -->
+<!-- <button onclick="myFunction#()">Exercise#</button>
+<p id="exercise1"></p>
+<script>
+function myFunction# () {
+let text;
+statements
+text = answer;
+console.log(answer);
+document.getElementById("exercise#").innerHTML = text;
+}
+</script> -->
+
+
+<h3>Answers</h3>
+
+<!-- exercise 1 -->
+
+<button onclick="myFunction1()">Exercise1</button>
+<p id="exercise1"></p>
+
+<script>
+function myFunction1 () {
+let text;
+let wholesalePrice = 5.45;
+let retailPrice = 9.99;
+let quantity = 47;
+let salesTotal = retailPrice * quantity;
+let profit = salesTotal - (wholesalePrice * quantity);
+text = profit;
+document.getElementById("exercise1").innerHTML = text;
+console.log(profit);
+}
+</script>
+
+<!--exercise 2 -->
+
+<button onclick="myFunction2()">Exercise 2</button>
+<p id="exercise2"></p>
+
+<script>
+function myFunction2 () {
+let text;
+let x1 = 5;
+let y1 = 6;
+let step1 = (x1 + y1);
+
+let x2 = 5;
+let y2 = 6;
+let step2 = (x2 - y2);
+
+let x3 = 5;
+let y3 = 6;
+let step3 = (x3 * y3);
+
+
+let x4 = 5;
+let y4 = 6;
+let step4 = (x4 / y4);
+
+if (step4 % 2 === 0) {
+  text = "Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!";
+
+  concole.log("Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!");
+}
+else {
+  text = "Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's odd!";
+
+  console.log("Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!");
+}
+document.getElementById("exercise2").innerHTML = text;
+}
+</script>
+
+<!-- exercise 3 -->
+<!-- <button onclick="myFunction3()">Exercise 3</button>
+<p id="exercise3"></p>
+<script>
+function myFunction3 () {
+let text;
+statements
+text = answer;
+console.log(answer);
+document.getElementById("exercise3").innerHTML = text;
+}
+</script> -->
+
+<!-- exercise 4 -->
+<!-- <button onclick="myFunction#()">Exercise#</button>
+<p id="exercise1"></p>
+<script>
+function myFunction# () {
+let text;
+statements
+text = answer;
+console.log(answer);
+document.getElementById("exercise#").innerHTML = text;
+}
+</script> -->
+
+<!-- exercise 5 -->
+<!-- <button onclick="myFunction#()">Exercise#</button>
+<p id="exercise1"></p>
+<script>
+function myFunction# () {
+let text;
+statements
+text = answer;
+console.log(answer);
+document.getElementById("exercise#").innerHTML = text;
+}
+</script> -->
+
+
+<!-- exercise 6  -->
+
+    <button onclick="myFunction6()">Exercise 6</button>
+    <p id="exercise6"></p>
+
+<script>
+function myFunction6() {
+  let text;
+  let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
+  
+  if (numbers == null || numbers == "") {
+    text = "User cancelled the prompt.";
+  } else {
+    let exercise6 = numbers.map(Number);
+  let xp = exercise6[0];
+let yp = exercise6[1];
+let add =  (xp + yp);
+let sub =  (xp - yp);
+let hundred = ((xp - yp) + 100);
+let divide =  (((xp - yp) + 100) / 2);
+text =  "The values " + exercise6[0] + " & " + exercise6[1] + " added together equal " + add + " and subtracted apart equals " + sub + ". Adding 100 to the subtracted values equals " + hundred + " and then further dividing that subtracted number by 2 equals " + divide + ". Reload the page to run a different exercise!";
+
+console.log("The values " + exercise6[0] + " & " + exercise6[1] + " added together equal " + add + " and subtracted apart equals " + sub + ". Adding 100 to the subtracted values equals " + hundred + " and then further dividing that subtracted number by 2 equals " + divide + ". Reload the page to run a different exercise!");
+  }
+  document.getElementById("exercise6").innerHTML = text;
+}
+</script>
+
+<!-- exercise 7 -->
+<!-- <button onclick="myFunction#()">Exercise#</button>
+<p id="exercise1"></p>
+<script>
+function myFunction# () {
+let text;
+statements
+text = answer;
+console.log(answer);
+document.getElementById("exercise#").innerHTML = text;
+}
+</script> -->
 
     
 </body>

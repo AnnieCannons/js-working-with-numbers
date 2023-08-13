@@ -200,8 +200,13 @@ console.log(`The values added together equal ${toAdd1(numbers)} and subtracted a
 let decimalNumber = 7.8;
 // Given the above variable, how would you round the value to the nearest whole number (using the Math object)?
 
+"answer"
+
+console.log(Math.round(7.8)); // 8
 // Console log the output to check your work.
 
+//resource I used: http://cheatsheets.shecodes.io/javascript
+//https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/round
 
 
 
@@ -210,6 +215,7 @@ let decimalNumber = 7.8;
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
 
+Math.floor(Math.random() * 10);
 
 // Alert the user of the random number.
 
