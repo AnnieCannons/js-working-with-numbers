@@ -16,71 +16,61 @@ body {
 *{
     list-style: none;
     text-decoration: none;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
 }
 
 .wrapper .sidebar{
   position: fixed;
-  top: 0;
-  left: 0;
-  max-width: 25%;
-  height: 100%;
-  padding: 20px 0;
   transition: all 0.5s ease;
 }
 
 .sidebar {
-animation: scroll 200s linear infinite;
+animation: scroll 100s linear infinite;
 background: url("./gallery/neon-tropical-monstera-leaf-banner.jpg"),
 #111111;
 color: #eeeeee;
-height: 1vh;
-max-width: 15%;
-min-width: 180px;
-display: flex;
 justify-content: center;
+position: fixed;
 align-items: center;
 perspective: 1000px;
 perspective-origin: 50% 50%;
 transition: all 0.5s ease;
+height: 100%;
 }
 
 
 
   .wrapper  .profile {
-    position:absolute;
-    text-align: center;
-    width: auto;
-    height: 100%;
+    display: block;
+margin-top: 10px;
+padding: 0;
 }
 
-
 .wrapper .sidebar .profile h3 {
-  margin: 20px 0 0px;
   text-transform: uppercase;
   font-family: 'Montserrat' sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+  margin: 25px 0 0 0;
+  
 }
 
 .wrapper .sidebar .profile #side-p {
     color: rgb(206, 240, 253);
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-
-    
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 0 0 0 0;
+    border-bottom: 3px solid #10558dc3;
 }
 
 .wrapper .sidebar ul li a{
     display: block;
-    padding: 13px 30px;
+    padding:  20px 5px;
     border-bottom: 1px solid #10558d;
     color: rgb(241, 237, 237);
     font-size: 14px;
-    position: relative;
-    margin: 0;
+    margin: 10% 0 0 0;
+    
 }
 
 
@@ -184,15 +174,16 @@ head {
 }
 
 #box, #content {
-
-    margin-left: 200px;
+  display: block;
+    margin-left: 160px;
     width: auto;
     margin-right: 5px;
     padding: 1px 15px 1px  5px;
     height: auto;
    
     justify-content: center;
-    background-color: rgba(0, 0, 0, 0.52);
+    background-color: rgba(0, 0, 0, 0.364);
+  
 }
 
 
@@ -215,7 +206,7 @@ head {
 p {
     display:flex;
     flex-wrap:wrap;
-    padding: 0.8rem 2rem;
+    padding: 0.8rem 15px;
     text-align: left;
     font-size: clamp(.5rem, 0.5rem + 2.5vh, 1rem);
     letter-spacing: 2px;
@@ -250,7 +241,7 @@ p {
     #heading-wrap {
       margin-bottom: 1px;
       margin-top: 1px;
-      padding: 0px 2rem;
+      padding: 0px 15px;
       display: grid;
       place-content: left;
       background-color: var(--background-color);
@@ -276,7 +267,7 @@ p {
 }
 
 .container {
- margin-left: 165px;
+ margin-left: 150px;
   width: auto;
   min-height: 2vh;
   display: flex;
@@ -287,7 +278,7 @@ p {
 }
 
 .button {
-  margin: 10px;;
+  margin: 20px;;
   position: relative;
   padding: 20px 10px;
   font-size: 2.5vh, 2.5vw;
