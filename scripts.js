@@ -129,7 +129,7 @@ function toCelsius (pValue) {
    return ((Number(pValue) * (9/5)) + 32);
 }
 
-let pValue = prompt("Please log the temperature in celcius here! (note the value should be less than 57.6)");
+let pValue = prompt("Please log the temperature in celcius here! (note the value should be less than 57.6) To complete exercise 5, log the number 25 and check the results");
 
 let fahrenheit = toCelsius(Number(pValue)); 
 
@@ -202,7 +202,9 @@ let decimalNumber = 7.8;
 
 "answer"
 
-console.log(Math.round(7.8)); // 8
+console.log(Math.round(7.8));
+
+// 8
 // Console log the output to check your work.
 
 //resource I used: http://cheatsheets.shecodes.io/javascript

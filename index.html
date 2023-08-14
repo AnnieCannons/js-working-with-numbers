@@ -90,43 +90,72 @@ document.getElementById("exercise2").innerHTML = text;
 </script>
 
 <!-- exercise 3 -->
-<!-- <button onclick="myFunction3()">Exercise 3</button>
+<button onclick="myFunction3()">Exercise 3</button>
 <p id="exercise3"></p>
 <script>
 function myFunction3 () {
 let text;
-statements
-text = answer;
-console.log(answer);
+const age = 26;
+const maximum = 36;
+const meals = 2;
+let total = ((maximum - age) * 365) * meals;
+text = `You will need ${total} meals to last until the age of ${maximum}!`;
+
+console.log(`You will need ${total} meals to last until the age of ${maximum}!`);
+
 document.getElementById("exercise3").innerHTML = text;
 }
-</script> -->
+</script> 
 
 <!-- exercise 4 -->
-<!-- <button onclick="myFunction#()">Exercise#</button>
-<p id="exercise1"></p>
+<button onclick="myFunction4()">Exercise 4</button>
+<p id="exercise4"></p>
 <script>
-function myFunction# () {
+function myFunction4 () {
 let text;
-statements
-text = answer;
-console.log(answer);
-document.getElementById("exercise#").innerHTML = text;
+let mathScore = 90;
+let scienceScore = 85;
+let englishScore = 80;
+let historyScore = 95;
+
+const tests = [mathScore, scienceScore, englishScore, historyScore];
+const score = average(tests);
+
+function average(tests) {
+    let sum = tests.reduce((accumulator, currentValue) => {
+        return accumulator + currentValue;
+    }, 0);
+
+    let avg = sum / tests.length;
+
+    return avg;
 }
-</script> -->
+text = `The overall average is, ${score}!`;
+console.log(`The overall average is, ${score}!`);
+document.getElementById("exercise4").innerHTML = text;
+}
+</script>
 
 <!-- exercise 5 -->
-<!-- <button onclick="myFunction#()">Exercise#</button>
-<p id="exercise1"></p>
+ <button onclick="myFunction5()">Exercise 5</button>
+<p id="exercise5"></p>
 <script>
-function myFunction# () {
+function myFunction5 () {
 let text;
-statements
-text = answer;
-console.log(answer);
-document.getElementById("exercise#").innerHTML = text;
+function toCelsius (pValue) { 
+   return ((Number(pValue) * (9/5)) + 32);
 }
-</script> -->
+let pValue = prompt("Please log the temperature in celcius here! (note the value should be less than 57.6) To complete exercise 5, log the number 25 and check the results");
+
+let fahrenheit = toCelsius(Number(pValue)); 
+
+if (Number(pValue) < 57.6) {
+  text = `${Number(pValue)}°C is equal to ${fahrenheit}°F`;
+    console.log(`${Number(pValue)}°C is equal to ${fahrenheit}°F`); }
+    
+document.getElementById("exercise5").innerHTML = text;
+}
+</script> 
 
 
 <!-- exercise 6  -->
@@ -137,6 +166,47 @@ document.getElementById("exercise#").innerHTML = text;
 <script>
 function myFunction6() {
   let text;
+  function toAdd1(numbers) {
+    let add =  (xp + yp);
+    return add;
+}
+
+function toSub1(numbers) {
+    let sub =  (xp - yp);
+    return sub;
+}
+
+function toHundred1(numbers) {
+    let hundred = ((xp - yp) + 100);
+    return hundred;
+}
+
+function toDivide1(numbers) {
+    let divide =  (((xp - yp) + 100) / 2);
+    return divide;
+}
+
+
+let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
+
+
+let exercise6 = numbers.map(Number);
+
+
+let xp = exercise6[0];
+let yp = exercise6[1];
+
+
+text = `The values added together equal ${toAdd1(numbers)} and subtracted apart equals ${toSub1(numbers)}. Adding 100 to the subtracted values equals ${toHundred1(numbers)} and then further dividing that subtracted number by 2 equals ${toDivide1(numbers)}.`;
+
+console.log(`The values ${exercise6[0]} and ${exercise6[1]} added together equal ${toAdd1(numbers)} and subtracted apart equals ${toSub1(numbers)}. Adding 100 to the subtracted values equals ${toHundred1(numbers)} and then further dividing that subtracted number by 2 equals ${toDivide1(numbers)}.`);
+  
+  document.getElementById("exercise6").innerHTML = text;
+}
+</script>
+
+<!-- alternate way to write exercise 6 outside of putting it in a function command:
+  
   let numbers = prompt('Please submit two numbers (example: 31 15)').split(' ');
   
   if (numbers == null || numbers == "") {
@@ -151,25 +221,97 @@ let hundred = ((xp - yp) + 100);
 let divide =  (((xp - yp) + 100) / 2);
 text =  "The values " + exercise6[0] + " & " + exercise6[1] + " added together equal " + add + " and subtracted apart equals " + sub + ". Adding 100 to the subtracted values equals " + hundred + " and then further dividing that subtracted number by 2 equals " + divide + ". Reload the page to run a different exercise!";
 
-console.log("The values " + exercise6[0] + " & " + exercise6[1] + " added together equal " + add + " and subtracted apart equals " + sub + ". Adding 100 to the subtracted values equals " + hundred + " and then further dividing that subtracted number by 2 equals " + divide + ". Reload the page to run a different exercise!");
-  }
-  document.getElementById("exercise6").innerHTML = text;
-}
-</script>
+console.log("The values " + exercise6[0] + " & " + exercise6[1] + " added together equal " + add + " and subtracted apart equals " + sub + ". Adding 100 to the subtracted values equals " + hundred + " and then further dividing that subtracted number by 2 equals " + divide + "!"); -->
+
 
 <!-- exercise 7 -->
-<!-- <button onclick="myFunction#()">Exercise#</button>
-<p id="exercise1"></p>
+ <button onclick="myFunction7()">Exercise 7</button>
+<p id="exercise7"></p>
 <script>
-function myFunction# () {
+function myFunction7 () {
 let text;
-statements
-text = answer;
-console.log(answer);
-document.getElementById("exercise#").innerHTML = text;
+let decimalNumber = 7.8;
+text = "Rounding 7.8 using the Math object equals " + Math.round(7.8) + "!";
+console.log("Rounding 7.8 using the Math object equals " + Math.round(7.8) + "!");
+document.getElementById("exercise7").innerHTML = text;
 }
-</script> -->
+</script> 
 
-    
+<!-- exercise 8 -->
+<button onclick="myFunction8()">Exercise 8</button>
+<p id="exercise8"></p>
+<script>
+function myFunction8 () {
+let text;
+let text2;
+let number = Math.floor(Math.random() * 10);
+text =  "Wow! You rolled 🎲🎲 and got the number " + number + "!";window.alert('Wow! You rolled 🎲🎲 and got the number ' + number + '!');
+
+console.log('Wow! You rolled 🎲🎲 and got the number ' + number + '!');
+document.getElementById("exercise8").innerHTML = text;
+}
+</script>  
+<!-- exercise 9 -->
+
+<button onclick="myFunction9()">Exercise 9</button>
+<p id="exercise9"></p>
+<script>
+function myFunction9 () {
+let text;
+let result1 = 0 / 0;
+let result2 = "hello" * 5;
+let result3 = parseInt("abc");
+
+let numVersion = 4;
+let wordVersion = 'four';
+
+let answer1 = [numVersion, wordVersion];
+
+answer1[1] = 4;
+ 
+answer2 = answer1[0] / answer1[1];
+
+let answer = [numVersion, wordVersion];
+
+answer[0] = 6;
+answer[1] = 'exercise';
+
+answer1 = (answer[1] + answer[0]);
+
+text = 'Part one of exercise 9 is ' +result1+ ', '+ result2+ ', ' +result3+ '! Next, JS number tools recreated numVersion and wordVersion to equal ' + answer1 + ' and finally JS tools adjusted wordVersion to equal the number 4 so to divide numVerision/wordVersion to get the mathmatical result ' + answer2 + '!';
+
+console.log('Part one of exercise 9 is ' +result1+ ', '+ result2+ ', ' +result3+ '! Next, JS number tools recreated numVersion and wordVersion to equal ' + answer1 + ' and finally JS tools adjusted wordVersion to equal the number 4 so to divide numVerision/wordVersion to get the mathmatical result ' + answer2 + '!');
+
+document.getElementById("exercise9").innerHTML = text;
+}
+
+
+</script>
+
+<div contenteditable="true"></div>
+
+<p>Paste any formatted text in the box above to view it as a plain text conversion</p>
+
+
+<script>
+  var ce = document.querySelector('[contenteditable]')
+  ce.addEventListener('paste', function (e) {
+    e.preventDefault()
+    var text = e.clipboardData.getData('text/plain')
+    document.execCommand('insertText', false, text)
+  })
+</script>
+
+<div contenteditable="true"></div>
+
+<p> Paste any formatted text in the box below to view it as its retain its formating </p>
+<br /> 
+
+<script>
+    var text = e.clipboardData.getData('text/plain')
+    document.execCommand('insertText', false, text)
+</script>
+
+
 </body>
 </html>
