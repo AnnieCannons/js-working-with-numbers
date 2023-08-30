@@ -3,7 +3,7 @@
 
 let wholesalePrice = 5.45;
 let retailPrice = 9.99;
-let quantity = 47;
+let quantity = prompt("what is your quantity? ");
 let salesTotal = retailPrice * quantity;
 let profit = salesTotal - (wholesalePrice * quantity);
 
@@ -47,6 +47,12 @@ let division = 10/2
 // Calculate how many you would eat total for the next decade.
 // Output the result to the screen like so: "You will need [AMOUNT] meals to last you until the age of [AGE]".
 
+let userAge = 26
+let futureAge = 36
+let meals = 4
+let totalMeals = (meals*365)*10
+// alert("you will need  " + totalMeals + "  meals to last you until the age of   "+ futureAge)
+// console.log("you will need  " + totalMeals + "  meals to last you until the age of   "+ futureAge)
 
 
 
@@ -63,7 +69,7 @@ let historyScore = 95;
 // How would you get the average of their scores using JavaScript?
 
 
-
+// console.log( (mathScore+scienceScore+englishScore+historyScore)/4)
 
 
 
