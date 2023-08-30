@@ -7,11 +7,14 @@ let quantity = 47;
 let salesTotal = retailPrice * quantity;
 let profit = salesTotal - (wholesalePrice * quantity);
 
-// Where might this code be used?
+// Where might this code be used? 
+// Retail company's  
 
 
 // Run this code and log the profit variable in the console. What answer do you get?
 
+console.log(salesTotal)
+console.log(profit)
 
 // How would you change this code to make the value of the quanitity variable dynamic?
 
@@ -19,19 +22,23 @@ let profit = salesTotal - (wholesalePrice * quantity);
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
 
+let sum = 2+3
 
 // Step 2: Calculate the difference between two numbers and print the result.
 
+let difference = 10-5
 
 // Step 3: Calculate the product of two numbers and print the result.
 
+let product = 1*5
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
 
+let division = 10/2
 
 // Step 5: Check if a given number is even and print the result.
 
-
+//??
 
 /********************** Exercise 3 - Decades Calculator **********************/
 // Store your current age into a variable.
