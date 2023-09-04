@@ -86,14 +86,14 @@ let historyScore = 95;
 
 
 // Prompt the user fo(r the value of the temperature in celcius. 
-// let celcius = prompt ("What is the temperature in celcius")
+ let celcius = prompt ("What is the temperature in celcius")
 
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
-// let fahrenheit =( celcius *9/5)+32
-// let message = fahrenheit
-// console.log(message)
+let fahrenheit =( celcius *9/5)+32
+let message = `${celcius}°C is equal to ${fahrenheit}°F`
+console.log(message)
 
 /********************** Exercise 6 - Assigning Values  **********************/
 
