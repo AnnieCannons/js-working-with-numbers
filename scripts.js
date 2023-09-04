@@ -1,11 +1,11 @@
 /********************** Exercise 1  **********************/
 // Describe the following code:
 
-let wholesalePrice = 5.45;
-let retailPrice = 9.99;
-let quantity = prompt("what is your quantity? ");
-let salesTotal = retailPrice * quantity;
-let profit = salesTotal - (wholesalePrice * quantity);
+// let wholesalePrice = 5.45;
+// let retailPrice = 9.99;
+// let quantity = prompt("what is your quantity? ");
+// let salesTotal = retailPrice * quantity;
+// let profit = salesTotal - (wholesalePrice * quantity);
 
 // Where might this code be used? 
 // Retail company's  
@@ -13,28 +13,36 @@ let profit = salesTotal - (wholesalePrice * quantity);
 
 // Run this code and log the profit variable in the console. What answer do you get?
 
-console.log(salesTotal)
-console.log(profit)
+// console.log(salesTotal)
+// console.log(profit)
 
 // How would you change this code to make the value of the quanitity variable dynamic?
-
+//  by prompt 
 
 /********************** Exercise 2 - Operators **********************/
 // Step 1: Calculate the sum of two numbers and log the result.
 
 let sum = 2+3
+sum = 8+2
+console.log(sum)
 
 // Step 2: Calculate the difference between two numbers and print the result.
 
 let difference = 10-5
+ difference = 20 - 10
+console.log(difference)
 
 // Step 3: Calculate the product of two numbers and print the result.
 
 let product = 1*5
+ product = 5*2
+console.log(product)
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
 
 let division = 10/2
+ division = 20/2
+console.log(division)
 
 // Step 5: Check if a given number is even and print the result.
 
@@ -77,12 +85,15 @@ let historyScore = 95;
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
 
 
-// Prompt the user for the value of the temperature in celcius. 
+// Prompt the user fo(r the value of the temperature in celcius. 
+// let celcius = prompt ("What is the temperature in celcius")
 
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
-
+// let fahrenheit =( celcius *9/5)+32
+// let message = fahrenheit
+// console.log(message)
 
 /********************** Exercise 6 - Assigning Values  **********************/
 
@@ -104,23 +115,22 @@ let historyScore = 95;
 
 
 /********************** Exercise 7 - Math Object  **********************/
-let decimalNumber = 7.8;
+let decimalNumber = Math.round(7.8);
 // Given the above variable, how would you round the value to the nearest whole number (using the Math object)?
 
 // Console log the output to check your work.
 
-
-
+console.log(decimalNumber)
 
 
 /********************** Exercise 8 - Math Object  **********************/
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
 
-
+// let diceGame = Math.floor(Math.random() * 7)
 // Alert the user of the random number.
 
-
+// alert(diceGame)
 
 
 
@@ -131,13 +141,15 @@ let result2 = "hello" * 5;
 let result3 = parseInt("abc");
 
 // Log the above variables in the console. What is the output?
-
+console.log(result1)
+console.log(result2)
+console.log(result3)
 // Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
 let numVersion = 4;
 let wordVersion = 'four';
 
-
+wordVersion = numVersion
 
 console.log("Four divided by four is: " + (numVersion / wordVersion))
 
