@@ -76,14 +76,20 @@ let y4 = 6;
 let step4 = (x4 / y4);
 
 if (step4 % 2 === 0) {
-  text = "Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!";
+  text = `Step 1 equals ${step1} <br /> Step 2 equals ${step2} <br /> Step 3 equals ${step3} <br/> Step 4 equals ${step4} <br /> The final result is even!`;
+  
+  //"Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!";
 
+  // `Step 1 equals ${step1} <br /> Step 2 equals ${step2} <br /> Step 3 equals ${step3} <br/> Step 4 equals ${step4} so it's even!`
+  
   concole.log("Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!");
 }
 else {
-  text = "Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's odd!";
+  text = `Step 1 equals ${step1} <br /> Step 2 equals ${step2} <br /> Step 3 equals ${step3} <br/> Step 4 equals ${step4} <br /> The final result is odd!`;
+  
+  //"Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's odd!";
 
-  console.log("Step 1 equals " + step1 + ", step 2 equals " + step2 + ", and step 3 equals " + step3 + ", and finally step 4 equals " + step4 + ", so it's even!");
+  console.log(`Step 1 equals ${step1} \n Step 2 equals ${step2} \n Step 3 equals ${step3} \n Step 4 equals ${step4} \n The final result is odd!`);
 }
 document.getElementById("exercise2").innerHTML = text;
 }
@@ -304,7 +310,7 @@ document.getElementById("exercise9").innerHTML = text;
 
 <div contenteditable="true"></div>
 
-<p> Paste any formatted text in the box below to view it as its retain its formating </p>
+<p> Paste any formatted text in the box below to view it retain its formating </p>
 <br /> 
 
 <script>

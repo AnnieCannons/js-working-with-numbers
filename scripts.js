@@ -240,7 +240,7 @@ let wordVersion = 'four';
 
 
 
-console.log("Four divided by four is: " + (numVersion / wordVersion))
+console.log("Four divided by four is: " + (numVersion / wordVersion));
 
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
