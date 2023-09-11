@@ -1,0 +1,14 @@
+Exercise 1
+Great job on answering the first couple of questions. How would you answer the following?
+// How would you change this code to make the value of the quantity variable dynamic?
+
+Exercise 2 and 3 look great!
+
+Exercise 4
+Please refactor this to use the math operators (+,-,/,*) instead of the reduce method. This is a great method but we want to make sure you are comfortable using these operators as well.
+
+Exercises 5 - 8 look great! You can uncomment the code, if you would like to
+
+Exercise 9
+Please andwer the following question:
+// Look up the isNaN() operator in MDN. What does it do? How would you use it?
