@@ -85,31 +85,36 @@ let historyScore = 95;
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
 
 
-// Prompt the user fo(r the value of the temperature in celcius. 
- let celcius = prompt ("What is the temperature in celcius")
+// Prompt the user fo(r the value of the temperature in Celcius. 
+//  let celcius = prompt ("What is the temperature in Celcius")
 
 
-// Run the code so that the following is logged to the console: 25°C is equal to 77°F
+// // Run the code so that the following is logged to the console: 25°C is equal to 77°F
 
-let fahrenheit =( celcius *9/5)+32
-let message = `${celcius}°C is equal to ${fahrenheit}°F`
-console.log(message)
+// let fahrenheit =( celcius *9/5)+32
+// let message = `${celcius}°C is equal to ${fahrenheit}°F`
+// console.log(message)
 
 /********************** Exercise 6 - Assigning Values  **********************/
 
 // Prompt the user for two numbers.
-
+let num1 = Number(prompt("enter the first number:"))
+let num2 = Number(prompt("enter a second  number: "))
 // Make sure that the values of the variables are converted to numbers—any time a value comes to you from a user, it will be a string.
 
 // Create a new variable, add the numbers, and log the value.
-
+let honey = num1+num2
+console.log(`addition result:${honey}`)
 // Reassign the variable to store the values of the numbers being substracted. Log the value.
-
+honey= num1-num2
+console.log(`subtraction result:${honey}`)
 // Add 100 to the variable. Log the value.
-
+honey += 100
+console.log(`after adding 100:${honey}`)
 // Divide the value of the variable by 20. Log the value.
 
-
+honey /=20
+console.log(`after dividing by 20: ${honey}`)
 
 
 
@@ -120,17 +125,17 @@ let decimalNumber = Math.round(7.8);
 
 // Console log the output to check your work.
 
-console.log(decimalNumber)
+console.log(`Result of nearest whole number: ${decimalNumber}`)
 
 
 /********************** Exercise 8 - Math Object  **********************/
 // Dice Game
 // Create a variable that stores the value of a random number between 1 and 6
 
-// let diceGame = Math.floor(Math.random() * 7)
+let diceGame = Math.floor(Math.random() * 7)
 // Alert the user of the random number.
 
-// alert(diceGame)
+console.log(`result of dice: ${diceGame}`)
 
 
 
@@ -144,14 +149,16 @@ let result3 = parseInt("abc");
 console.log(result1)
 console.log(result2)
 console.log(result3)
+
+// the output is NaN
 // Without changing the below code, how could you write some new code between the variable declarations and the log, so that the answer is logged to the console? Use JavaScript number tools, please—don't reassign a number directly, as in: `wordVersion = 4`.
 
 let numVersion = 4;
 let wordVersion = 'four';
 
-wordVersion = numVersion
-
+// wordVersion = numVersion
 console.log("Four divided by four is: " + (numVersion / wordVersion))
 
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
+console.log("Four divided by four is: " + (isNaN(numVersion / wordVersion) ? "Not a valid number" : (numVersion / wordVersion)));
