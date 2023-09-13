@@ -97,6 +97,18 @@ let historyScore = 95;
 
 // How would you get the average of their scores using JavaScript?
 
+const tests = [mathScore, scienceScore, englishScore, historyScore];
+
+let sum = 0;
+
+for (let i = 0; i < tests.length; i++ ) {
+    sum += tests[i];}
+
+let avg = sum / tests.length
+
+console.log(`The overall average is, ${avg}!`)
+
+/*
 
 const tests = [mathScore, scienceScore, englishScore, historyScore];
 const score = average(tests);
@@ -113,7 +125,7 @@ function average(tests) {
 
 console.log(`The overall average is, ${score}!`); // The overall average is, 87.5!
 
-
+*/ 
 
 /********************** Exercise 5 - Weather Converter **********************/
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
@@ -251,3 +263,5 @@ ce.addEventListener('paste', function (e) {
   var text = e.clipboardData.getData('text/plain')
   document.execCommand('insertText', false, text)
 })
+
+// the job is to return a yes or no (true false) to represent if something is or is not a number depending on the question type 

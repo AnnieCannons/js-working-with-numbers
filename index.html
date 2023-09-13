@@ -125,19 +125,16 @@ let englishScore = 80;
 let historyScore = 95;
 
 const tests = [mathScore, scienceScore, englishScore, historyScore];
-const score = average(tests);
 
-function average(tests) {
-    let sum = tests.reduce((accumulator, currentValue) => {
-        return accumulator + currentValue;
-    }, 0);
+let sum = 0;
 
-    let avg = sum / tests.length;
+for (let i = 0; i < tests.length; i++ ) {
+    sum += tests[i];}
 
-    return avg;
-}
-text = `The overall average is, ${score}!`;
-console.log(`The overall average is, ${score}!`);
+let avg = sum / tests.length
+
+text = `The overall average is, ${avg}!`;
+console.log(`The overall average is, ${avg}!`);
 document.getElementById("exercise4").innerHTML = text;
 }
 </script>
