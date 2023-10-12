@@ -75,22 +75,26 @@ let englishScore = 80;
 let historyScore = 95;
 
 // How would you get the average of their scores using JavaScript?
+let totalScore = mathScore + scienceScore + englishScore + historyScore;
+let numberOfSubjects = 4;
 
+let averageScore = totalScore / numberOfSubjects;
+let roundedAverageScore = averageScore.toFixed(2);
 
-function calculateAverage(numbers) {
-    if (numbers.length === 0) {
-      return 0; // Handle the case of an empty array.
-    }
+// function calculateAverage(numbers) {
+//     if (numbers.length === 0) {
+//       return 0; 
+//     }
 
-const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-const average = sum / numbers.length;
+// const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+// const average = sum / numbers.length;
 
-    return average;
-}
+//     return average;
+// }
 
-const values = [mathScore, scienceScore, englishScore, historyScore];
-const average = calculateAverage(values);
-console.log(average)
+// const values = [mathScore, scienceScore, englishScore, historyScore];
+// const average = calculateAverage(values);
+// console.log(average)
 
 /********************** Exercise 5 - Weather Converter **********************/
 // Write a calculation that converts celsius to fahrenheit. To get the value of fahrenheit, you have to multiply the celsius value by 9/5 and then add 32. 
@@ -104,14 +108,14 @@ console.log(average)
 
 //const celsius = parseFloat(prompt("Enter the temperature in Celsius:"));
 
-//if (!isNaN(celsius)) {
+if (!isNaN(celsius)) {
 
-//const fahrenheit = (celsius * 9/5) + 32;
+const fahrenheit = (celsius * 9/5) + 32;
 
-//console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
-//} else {
-//console.log("Invalid input. Please enter a valid number.");
-//}
+console.log(`${celsius}°C is equal to ${fahrenheit}°F`);
+} else {
+console.log("Invalid input. Please enter a valid number.");
+}
 
 
 /********************** Exercise 6 - Assigning Values  **********************/
@@ -182,3 +186,7 @@ console.log("Four divided by four is: " + (numVersion / wordVersion))
 
 
 // Look up the isNaN() operator in MDN. What does it do? How would you use it?
+
+// isNaN() is a function property of the global object. 
+// For number values, isNaN() tests if the number is the value NaN . 
+// When the argument to the isNaN() function is not of type Number, the value is first coerced to a number, and the resulting value is then compared against NaN
