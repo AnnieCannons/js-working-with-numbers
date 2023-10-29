@@ -14,7 +14,7 @@ let profit = salesTotal - (wholesalePrice * quantity);
 console.log(profit); "213.38"
 
 // How would you change this code to make the value of the quantity variable dynamic?
-userInput = prompt("Enter Amount");
+let userInput = prompt("Enter Amount");
 let dynamicQuantity = parseFloat(userInput);
 console.log(dynamicQuantity);
 
@@ -30,31 +30,29 @@ let total = 3 + 7;
 console.log(total);
 
 // Step 2: Calculate the difference between two numbers and print the result.
-difference = 88 - 33;
+let difference = 88 - 33;
 console.log(difference);
 //⭐️55
 
 // Step 3: Calculate the product of two numbers and print the result.
-product = 2 * 2;
+let product = 2 * 2;
 console.log(product);
 //⭐️4
 
 // Step 4: Calculate the result of dividing two numbers and print the result. Handle division by zero.
-division = 10 / 2;
+let division = 10 / 2;
 console.log(division);
 let division2 = 5 / 0;
 console.log(division2);
 
 // Step 5: Check if a given number is even and print the result.
 let number1 = 23;
-number1 % 2;
-console.log(number1 % 2);
-//⭐️odd
+console.log(number1 % 2 === 0 ? `${number1} is an even number.` : `${number1} is an odd number.`, "NUM 1" );
+//⭐️23 is an odd number.
 
 let number2 = 64;
-number2 % 2;
-console.log(number2 % 2);
-//⭐️true
+console.log(number2 % 2 === 0 ? `${number2} is an even number.` : `${number2} is an odd number.`, "NUM 2" );
+//⭐️64 is an even number.
 
 
 /********************** Exercise 3 - Decades Calculator **********************/
@@ -86,7 +84,7 @@ let historyScore = 95;
 let scoreAverage = mathScore + scienceScore + englishScore + historyScore;
 let average = 4;
 let averageTotal = scoreAverage / average;
-console.log("The average for this student is " + averageTotal);
+console.log("The average for this student is " + averageTotal, "AVERAGE TOTAL");
 
 
 
@@ -97,11 +95,12 @@ console.log("The average for this student is " + averageTotal);
 
 
 // Prompt the user for the value of the temperature in celcius. 
-let userInputCelcius = prompt ("Enter a temperature in a Celsius Degree");
-let fahrenheit = (userInputCelcius * 9 / 5) + 32;
-
+let userInputCelsius = prompt ("Enter a temperature in a Celsius Degree");
+let fahrenheit = (userInputCelsius * 9 / 5) + 32;
+console.log(userInputCelsius + "°C is equal to " + fahrenheit + "°F");
 
 // Run the code so that the following is logged to the console: 25°C is equal to 77°F
+
 
 
 
@@ -128,7 +127,7 @@ console.log("The difference of the two numbers is " + userNumberTotal)
 userNumberTotal = userNumberInput1 + userNumberInput2 + 100;
 
 // Divide the value of the variable by 20. Log the value.
-userNumberTotal = ("userNameInput1" + "userNumberInput2") / 20;
+userNumberTotal = ("userNumberInput1" + "userNumberInput2") / 20;
 console.log(userNumberTotal);
 
 
